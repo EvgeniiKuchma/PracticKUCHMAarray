@@ -8,7 +8,7 @@
 	 { 
 		if (arr[i] == n)
 			 arr[i] = arr[i] * 0;
-	 std::cout << arr[i]<<" ";
+
 	 }
 	
  }
@@ -39,7 +39,7 @@
 		 min = arr3[i] < min ? arr3[i] : min;
 		 max = arr3[i] > max ? arr3[i] : max;
 	 }
-		 return min + max;
+		 return (min + max)/2;
  }
 
  void prime_range(int a, int b)
@@ -66,14 +66,14 @@ int main()
 		const int size = 8;
 		int arr[size]{ 2,4,6,6,9,6,4,6 };
 		clear_arr(arr, size, 6);
-
+		show_arr(arr, size);
+		
 		
 		const int size1 = 5;
 		int arr1[size1]{ 4,1,3,4,5 };
 		const int size2 = 5;
 		int arr2[size2]{ 4,1,3,4,5 };
 		std::cout << "\n\n"<<index_sum(arr1, arr2, size1, size2, 2);
-		
 		
 		const int size3 = 5;
 		int arr3[size3]{ 1,2,3,4,5 };
