@@ -8,9 +8,7 @@
 	 { 
 		if (arr[i] == n)
 			 arr[i] = arr[i] * 0;
-
 	 }
-	
  }
 
  template<typename T>
@@ -35,11 +33,12 @@
  int mean_arr(int arr3[], const int size3)
  {   int min = arr3[0];
 	 int max = arr3[0];
-	 for (int i = 1; i < size3; i++){
+	 for (int i = 1; i < size3; i++)
+	 {
 		 min = arr3[i] < min ? arr3[i] : min;
 		 max = arr3[i] > max ? arr3[i] : max;
 	 }
-		 return (min + max)/2;
+	 return (min + max) / 2;
  }
 
  void prime_range(int a, int b)
@@ -53,9 +52,8 @@
 				 count++;
 		 if (count == 2)
 			 std::cout << i << " ";
-	}
+	 }
 		 std::cout << "\n";
-	 
  }
 int main() 
 {
@@ -73,12 +71,14 @@ int main()
 		int arr1[size1]{ 4,1,3,4,5 };
 		const int size2 = 5;
 		int arr2[size2]{ 4,1,3,4,5 };
-		std::cout << "\n\n"<<index_sum(arr1, arr2, size1, size2, 2);
+		std::cout << "\n"<<index_sum(arr1, arr2, size1, size2, 2);
+		
 		
 		const int size3 = 5;
 		int arr3[size3]{ 1,2,3,4,5 };
 		std::cout <<"\n\n"<< mean_arr(arr3, size3)<<"\n\n";
 
+		
 		prime_range(2, 100);
 
 		
